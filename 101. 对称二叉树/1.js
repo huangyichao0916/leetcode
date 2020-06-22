@@ -13,7 +13,7 @@ var isSymmetric = function(root) {
     let res = [];
     let helper = function(node){
         if (node === null) {
-            res.push(0);
+            res.push(undefined);
             return;
         }else{
             res.push(node.val);
