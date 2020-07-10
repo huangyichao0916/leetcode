@@ -26,7 +26,7 @@ var addTwoNumbers = function(l1, l2) {
         let qVal = q ? q.val : 0;
         let num = isCarry?1:0;
         let sum = pVal + qVal + num;
-        console.log(pVal,qVal,sum)
+        // console.log(pVal,qVal,sum)
         isCarry = sum >= 10;
         cur.next = new ListNode(sum % 10);
         cur = cur.next;
