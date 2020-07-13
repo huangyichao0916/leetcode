@@ -1,1 +1,2 @@
 - 移除链表中的一个节点的操作是：newHead.next = newHead.next.next;
+- 移除了之后，不能 newHead = newHead.next; 这样的话就会少遍历一个节点
