@@ -4,13 +4,10 @@
  */
 var simplifyPath = function(path) {
     path = path.replace(/\/{2,}/g,'/').replace(/\/$/,'');
-    // console.log(path)
     if (path[0] !== '/') {
         path = '/' + path;
     }
-    console.log(path)
     path = path.split('/');
-    console.log(path)
     let stack = ['/'];
     path.forEach(item => {
         switch (item) {
