@@ -1,4 +1,4 @@
-function singleNumber(nums: number[]): number {
+function singleNumber(nums: number[]): number | undefined {
     let obj:any = {};
     for (const item of nums) {
         if (obj[item]) {
