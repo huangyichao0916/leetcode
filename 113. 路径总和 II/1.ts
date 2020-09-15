@@ -30,11 +30,12 @@ function pathSum(root: TreeNode | null, sum: number): number[][] {
                 mySum -= node.val;
                 path.pop()
                 return;
-            }else{
-                mySum -= node.val;
-                path.pop()
-                return;
             }
+            // else{
+            //     mySum -= node.val;
+            //     path.pop()
+            //     return;
+            // }
         }
         dfs(node.left)
         dfs(node.right)
